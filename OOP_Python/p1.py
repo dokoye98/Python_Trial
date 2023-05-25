@@ -24,6 +24,7 @@ class Family:
         else:
             description += "  with no children."
         return description
+     
         
 fam_1 = Family("Dwayne","Male",24)
 fam_2 = Family("Cassey", "Female",18)
@@ -63,3 +64,15 @@ f2 =Friends("nell",26,1)
 Friends.valid_check(f1,f2)
         
         
+
+
+class Square:
+    length = 12
+    def __init__(self):
+        self.square = self.length
+    def area(self):
+        return self.square * self.length
+
+b = Square() 
+box = Square.area(b)
+print(box)
